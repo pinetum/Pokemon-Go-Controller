@@ -1,0 +1,106 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tw.qtlin.a21maptest.maptest_api21.MainActivity"
+    android:padding="0dp">
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tw.qtlin.a21maptest.maptest_api21.MapsActivity"
+    android:layout_above="@+id/btn_lu" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="o"
+        android:id="@+id/btn_set"
+        android:layout_above="@+id/btn_b"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="o"
+        android:id="@+id/btn_b"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="o"
+        android:id="@+id/btn_l"
+        android:layout_alignBottom="@+id/btn_set"
+        android:layout_toStartOf="@+id/btn_set" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="o"
+        android:id="@+id/btn_rb"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/btn_b" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="o"
+        android:id="@+id/btn_r"
+        android:layout_above="@+id/btn_b"
+        android:layout_toEndOf="@+id/btn_set" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="o"
+        android:id="@+id/btn_lb"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/btn_b" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="o"
+        android:id="@+id/btn_lu"
+        android:layout_above="@+id/btn_set"
+        android:layout_toStartOf="@+id/btn_set" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="o"
+        android:id="@+id/btn_u"
+        android:layout_above="@+id/btn_set"
+        android:layout_toStartOf="@+id/btn_r" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="o"
+        android:id="@+id/btn_ru"
+        android:layout_above="@+id/btn_set"
+        android:layout_toEndOf="@+id/btn_set" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPicker"
+        android:layout_below="@+id/map"
+        android:layout_toEndOf="@+id/btn_r" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textViewIp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
